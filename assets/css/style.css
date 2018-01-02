@@ -124,6 +124,12 @@ li {
 	font-size: .85em;
 }
 
+.contact-btn:hover {
+	color: #fff;
+	background-color: #268ee6;
+	padding: 10px 30px 10px 30px;
+}
+
 .github-btn {
 	color: #268ee6;
 	border: 3px solid #268ee6;
