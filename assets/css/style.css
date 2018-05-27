@@ -1,10 +1,11 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #323536;
+	color: #fff;
+	/*color: #323536;*/
 }
 
 html {
-	font-size: 1.1em;
+	font-size: 1.5em;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -29,7 +30,7 @@ h4 {
 }
 
 p {
-	font-size: .80em;
+	font-size: .70em;
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: .7em;
 }
@@ -54,7 +55,7 @@ li {
 	width: 100%;
 	min-height: 500px;
 	min-width: 360px;
-	background-color: #23344e;
+	background-color: #1e2225;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -64,7 +65,7 @@ li {
 
 	min-height: 550px;
 	text-align: center;
-	background-color: #268ee6;
+	background-color: #0c3d66;
 	color: #fff;
 }
 
@@ -74,7 +75,17 @@ li {
 
 .intro-text {
 	color: #fff;
+	margin-top: 1.75em;
+	margin-bottom:1.5em;
 }
+
+.profile-picture {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+
+
 
 
 .card-shadow {
@@ -96,7 +107,7 @@ li {
 }*/
 
 .move-alignment-up {
-	margin-top: -60px;
+	margin-top: -80px;
 }
 
 .move-alignment-up a {
@@ -109,6 +120,12 @@ li {
 .highlight-blue {
 	/*color: #4A90E2;*/
 	color: #268ee6;
+}
+
+/*1e1f1f  1e2225*/
+
+.bg-dark {
+	background-color: #1e1f1f!important;
 }
 
 .contact-btn {
@@ -157,8 +174,12 @@ li {
 	color: #268ee6;
 }
 
+.text-xsmall {
+	font-size: 0.55em;
+}
+
 .text-small {
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 
 .text-medium {
@@ -166,23 +187,25 @@ li {
 }
 
 .text-large {
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 
 .text-xl {
-	font-size: 2.3em;
+	font-size: 1.5em;
+}
+
+/*SPACING AND MARGIN*/
+
+.auto-type {
+	margin-left: 12%
 }
 
 .button-margin {
 	margin-bottom: 65px;
 }
 
-.effect {
-	transition: all .15s ease-in-out;
-}
-
 .section-spacing {
-	padding-top: 40px;
+	padding-top: 60px;
 }
 
 .item-spacing {
@@ -200,6 +223,11 @@ li {
 
 .card-body {
 	padding: 1em 1em .5em 1em;
+	color: #323536;
+}
+
+.portfolio-section {
+	background-color:#28343b;
 }
 
 .portfolio-img {
@@ -235,26 +263,65 @@ li {
 
 }
 
+.nav-link {
+	padding: 5px;
+	display: block;
+	font-size: .6rem;
+}
+
+.my-navbar {
+	padding: 0.25rem 1rem;
+}
+
+.my-nav-item {
+	margin-bottom: 0;
+}
+
+.navbar-toggler {
+	font-size: 0.8rem;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #268ee6;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 0.918);
+	padding: 0;
+	margin: 0.2rem .5rem;
+}
+
+.navbar-toggler {
+	padding: 0.1rem .25rem;
+}
+
 .card-text {
 	
 	margin-bottom: 20px;
 	padding: 0px 30px 0px 30px;
 }
 
+/*Animations and Effects*/
+.effect {
+	transition: all .15s ease-in-out;
+}
+
 #email:hover {
-	color: #474e4e;
+	/*color: #474e4e;*/
+	color: #4b90ca;
 	cursor: pointer;
 	transition: all .15s ease-in-out;
 }
 
 #github:hover {
-	color: #474e4e;
+	color: #4b90ca;
 	cursor: pointer;
 	transition: all .15s ease-in-out;
 }
 
 #linkedin:hover {
-	color: #474e4e;
+	color: #4b90ca;
 	cursor: pointer;
 	transition: all .15s ease-in-out;
 }
@@ -278,7 +345,6 @@ li {
     -webkit-animation: email 5s infinite; /* Safari 4.0 - 8.0 */
     animation: email 5s infinite;
 }
-
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes email {
@@ -341,7 +407,7 @@ li {
 
 @media screen and (min-width: 540px) {
 	.intro {
-		background: url("../images/circuit.jpg");
+		background: url("../images/hollywoodSignNew.jpg");
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -373,21 +439,35 @@ li {
 	margin-left: 1.75em;
 		padding-left: 15px;
 	}
+
+	.text-small {
+		font-size: 0.9em;
+	}
+	
+	.card-text {
+		text-align: left;
+		margin-bottom: 30px;
+		padding: 0px 10px 0px 30px;
+	}
+	.auto-type {
+		margin-left: 22%
+	}
+
+	.navbar-dark .navbar-nav .nav-link {
+		color: rgba(255, 255, 255, 0.918);
+		padding: 0px 0px 7px 0px;
+		margin: 0.1rem .5rem 0rem .5rem;
+	}
+	.navbar-dark .navbar-nav .nav-link:hover {
+		color: #268ee6;
+		border-bottom: 2px;
+		border-bottom-color: #268ee6;
+		border-bottom-style: solid;
+		padding-bottom: 5px;
+	}
+
 }
 
-.text-small {
-	font-size: 0.9em;
-}
-
-.card-text {
-	text-align: left;
-	margin-bottom: 30px;
-	padding: 0px 10px 0px 30px;
-}
-
-
-
-}
 
 @media screen and (min-width: 720px) {
 	/*	.text-small {
@@ -423,6 +503,9 @@ li {
 		text-align: left;
 		margin-bottom: 30px;
 	}
+	.auto-type {
+		margin-left: 28%
+	}
 }
 
 @media screen and (min-width: 960px) {
@@ -444,7 +527,7 @@ li {
 	}
 
 	p {
-		font-size: .6em;
+		font-size: .7em;
 		font-family: 'Open Sans', sans-serif;
 		margin-bottom: .7em;
 	}
@@ -456,6 +539,13 @@ li {
 		margin-bottom: .6em;
 		margin-right: 10px;
 	}
+	.auto-type {
+		margin-left: 32%
+	}
 }
 
-@media screen and (min-width: 1140px) {}
+@media screen and (min-width: 1140px) {
+	.auto-type {
+		margin-left: 36%
+	}
+}
