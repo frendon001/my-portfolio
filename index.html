@@ -2,14 +2,14 @@
 <html>
 
 <head>
-	<title>Fausto Rendon | Web Developer</title>
+	<title>Fausto Rendon | Software Engineer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Fausto Rendon">
 	<meta name="author" content="Fausto Rendon">
 	<meta property="og:locale" content="en_US">
-	<meta name="description" content="Web Developer">
-	<meta property="og:description" content="Web Developer">
+	<meta name="description" content="Software Engineer">
+	<meta property="og:description" content="Software Engineer">
 	<link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
 	<!-- Links for Bootstrap Styling-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -22,13 +22,40 @@
 	<div class="wrapper">
 		<!-- Start Intro Section-->
 		<div id="intro-fullscreen" class="intro">
+			<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark my-navbar">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+					<li class="nav-item my-nav-item">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item my-nav-item">
+						<a class="nav-link" href="#">Skills</a>
+					</li>
+					<li class="nav-item my-nav-item">
+						<a class="nav-link" href="#portfolio">Projects</a>
+					</li>
+					<li class="nav-item my-nav-item">
+							<a class="nav-link" href="#contactMe">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 			<div class="intro-container container-fluid full-height">
-				<div class="row full-height align-items-center justify-content-center">
+				<div class="row full-height justify-content-center">
 					<div class="col-10">
-						<h1 class="intro-text item-margin text-xl"><b><span>Hi, I'm Fausto Rendon.</span></b><br></h1>
-						<h2 class="intro-text item-margin text-large"><b>I am a software engineer with an electrical engineering background looking for opportunities to tackle new challenges.</b></h2>
-						<p class="highlight-blue text-medium item-margin typewrite" data-type='["Do you have a job opening?","Want to work on a project together?"]' data-period="3000"><span class="wrap"></span></p>
-						<div class="button-margin link"><a href="#contactMe" class="btn contact-btn">Contact me</a></div>
+						<h1 class="intro-text text-xl"><b><span>Fausto Rendon</span></b><br></h1>
+
+						<div class="text-left item-margin">
+							<span class="text-medium auto-type">I am </span><span class="text-medium item-margin typewrite" data-type='["a software engineer","a problem solver", "a team player", "a soccer fan", "a gamer", "a film enthusiast"]' data-period="2000"><span class="wrap"></span></span>
+						</div>
+
+						<div class="text-center item-margin">
+								<img class="profile-picture" src="assets/images/portfolio.jpg" alt="Profile Picture">
+							</div>
+						<!--<div class="button-margin link"><a href="#contactMe" class="btn contact-btn">Contact me</a></div>-->
 					</div>
 				</div>
 				<div class="row align-items-end">
@@ -43,9 +70,9 @@
 			<!-- Profile Section Header and Descrition -->
 			<div class="row justify-content-center">
 				<div class="col-10 bottom-seperator text-center">
-					<h2 class="section-spacing">My Work</h2>
-					<p>Take a look at my recent projects.</p>
-					<p class="text-small item-spacing">(Click on each project for more information)</p>
+					<h2 class="section-spacing">My Projects</h2>
+					<p class="item-margin">Take a look at some of my work</p>
+					<!--<p class="text-small item-spacing">(Click on each project for more information)</p>-->
 				</div>
 			</div>
 			<!-- Profile Part 1 -->
@@ -307,9 +334,9 @@
 		<!-- Start Profile Section-->
 		<section id="contactMe" class="contact-section section-spacing">
 			<div class="row justify-content-center item-spacing">
-				<div class="col-8 text-center">
+				<div class="col-10 col-md-8 text-center">
 					<h2 class="item-spacing">Want to get in touch?</h2>
-					<p>I am currently looking for work opportunities in software engineering or fullstack development. I am also interested in collaborating in open source projects.</p>
+					<p class="">I am currently looking for work opportunities in software engineering or fullstack development. I am also interested in collaborating in open source projects.</p>
 				</div>
 			</div>
 			<div class="row justify-content-center item-spacing">
