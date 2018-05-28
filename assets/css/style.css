@@ -47,6 +47,7 @@ li {
 
 .wrapper {
 	min-width: 350px;
+	position: relative;
 }
 
 #intro-fullscreen {
@@ -79,10 +80,44 @@ li {
 	margin-bottom:1.5em;
 }
 
+.info-title {
+    line-height: 1.5;
+    font-size: 16px;
+	color: #fff;
+	margin-bottom: .2rem;
+}
+
+.info-subtitle {
+    line-height: 1.5;
+    font-size: 12px;
+	margin-bottom: 0;
+	font-weight: 200;
+}
+
+.info-text {
+    line-height: 1.5;
+    font-size: 14px;
+	color: #9b9b9b;
+	margin-bottom: 0.25rem;
+	max-width: 500px;
+}
+
+.exp-img {
+	width: 200px;
+}
+
+.exp-img-section {
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
 .profile-picture {
 	width: 250px;
 	height: 250px;
 	border-radius: 50%;
+}
+#experience {
+	min-height: 100vh;
 }
 
 
@@ -226,6 +261,10 @@ li {
 	color: #323536;
 }
 
+.experience-section {
+	background-color:#1e1f1f;
+}
+
 .portfolio-section {
 	background-color:#28343b;
 }
@@ -270,7 +309,7 @@ li {
 }
 
 .my-navbar {
-	padding: 0.25rem 1rem;
+	padding: 0.25rem 0rem 0.25rem 1rem;
 }
 
 .my-nav-item {
@@ -469,7 +508,7 @@ li {
 }
 
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
 	/*	.text-small {
 		font-size: 1.2em;
 	}
@@ -506,6 +545,16 @@ li {
 	.auto-type {
 		margin-left: 28%
 	}
+
+	.exp-img {
+		padding-right: .75rem;
+	}
+
+	.exp-img-section {
+		text-align: right;
+		margin-bottom: 0rem;
+	}
+
 }
 
 @media screen and (min-width: 960px) {
@@ -542,6 +591,7 @@ li {
 	.auto-type {
 		margin-left: 32%
 	}
+
 }
 
 @media screen and (min-width: 1140px) {
