@@ -37,17 +37,25 @@ p {
 
 ul {
 	padding-left: 15px;
+	list-style: none;
 }
 
-li {
+.project-skill {
+	display: inline-block;
 	font-size: .70em;
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom: .6em;
+	padding: 0px 10px;
+	margin: 0 5px 5px 0;
+	border: 2px solid #4b90ca;
+	border-radius: 5px;
+	line-height: 21px;
+	color: #fff;
+	background-color: #4b90ca;
+	font-weight: bold;
 }
 
 .wrapper {
 	min-width: 350px;
-	position: relative;
 }
 
 #intro-fullscreen {
@@ -63,11 +71,44 @@ li {
 }
 
 #contactMe {
-
 	min-height: 550px;
 	text-align: center;
 	background-color: #0c3d66;
 	color: #fff;
+}
+
+.project-item {
+	border-radius: .25rem;
+	margin-right: 0px;
+	margin-left: 0px;
+	position: relative;
+	min-height: 400px;
+}
+
+.project-background-img {
+	background-size: cover;
+	background-position: top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 100%;
+	width: 60%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: .25rem 0 0 .25rem;
+}
+
+.project-info {
+	background-color: #fff;
+	color: #323536;
+	border-radius: 0 0 0.25rem 0.25rem;
+	padding: 1.25rem 0.5rem;
+}
+
+.nox-padding {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .full-height {
@@ -119,9 +160,10 @@ li {
 #experience {
 	min-height: 100vh;
 }
-
-
-
+.img-fill {
+	height: 100%;
+	width: 60%;
+}
 
 .card-shadow {
 	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
@@ -134,12 +176,6 @@ li {
 
 
 
-
-/*.intro-text-section{
-	background-color: #2c2e33;
-	border-radius: 30px;
-	opacity: .6;
-}*/
 
 .move-alignment-up {
 	margin-top: -80px;
@@ -156,8 +192,6 @@ li {
 	/*color: #4A90E2;*/
 	color: #268ee6;
 }
-
-/*1e1f1f  1e2225*/
 
 .bg-dark {
 	background-color: #1e1f1f!important;
@@ -181,28 +215,28 @@ li {
 	color: #268ee6;
 	border: 3px solid #268ee6;
 	border-radius: .4em;
-	padding: 10px 10px 10px 10px;
+	padding: 8px 15px 8px 15px;
 	font-size: .65em;
 }
 
 .github-btn:hover {
 	color: #fff;
 	background-color: #268ee6;
-	padding: 10px 15px 10px 15px;
+	padding: 10px 20px 10px 20px;
 }
 
 .site-btn {
 	color: #40ab51;
 	border: 3px solid #40ab51;
 	border-radius: .4em;
-	padding: 10px 20px 10px 20px;
+	padding: 8px 10px 8px 10px;
 	font-size: .65em;
 }
 
 .site-btn:hover {
 	color: #fff;
 	background-color: #40ab51;
-	padding: 10px 25px 10px 25px;
+	padding: 10px 15px 10px 15px;
 }
 
 .link:hover {
@@ -256,11 +290,6 @@ li {
 	background-color: #c9f2ff;
 }
 
-.card-body {
-	padding: 1em 1em .5em 1em;
-	color: #323536;
-}
-
 .experience-section {
 	background-color:#1e1f1f;
 }
@@ -270,14 +299,9 @@ li {
 }
 
 .portfolio-img {
-	border-bottom: 1px solid #505050;
+	border-radius: 0.25rem 0.25rem 0 0;
 }
 
-.portfolio-img:hover {
-	border: 3px solid #268ee6;
-	transition: border .2s ease-out;
-	cursor: pointer;
-}
 
 .bottom-seperator {
 	border-bottom: 1px solid #b0b2b2;
@@ -294,12 +318,6 @@ li {
 .card-title {
     font-weight: bolder;
     font-size: .85em;
-}
-
-.card-text li {
-	margin-left: 0.25em;
-	padding-left: 0px;
-
 }
 
 .nav-link {
@@ -335,10 +353,12 @@ li {
 	padding: 0.1rem .25rem;
 }
 
-.card-text {
-	
-	margin-bottom: 20px;
-	padding: 0px 30px 0px 30px;
+.project-text {
+	line-height: 21px;
+	font-size: 0.6rem;
+	margin-bottom: 1.25rem;
+	padding: 0px 0px 0px 15px;
+	color: #536d75;
 }
 
 /*Animations and Effects*/
@@ -364,7 +384,6 @@ li {
 	cursor: pointer;
 	transition: all .15s ease-in-out;
 }
-
 
 #linkedin{
 /*	left: -350px;*/
@@ -443,16 +462,15 @@ li {
     100% {bottom: 0px;}
 }
 
-
 @media screen and (min-width: 540px) {
 	.intro {
 		background: url("../images/hollywoodSignNew.jpg");
+		background-size:cover;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 	}
 	.intro-container {
-		/*		padding-top: 40vw;*/
 		height: 100%;
 		vertical-align: middle;
 	}
@@ -474,19 +492,8 @@ li {
 		margin-top: -65px;
 		line-height: 1;
 	}
-	.card-text li {
-	margin-left: 1.75em;
-		padding-left: 15px;
-	}
-
 	.text-small {
 		font-size: 0.9em;
-	}
-	
-	.card-text {
-		text-align: left;
-		margin-bottom: 30px;
-		padding: 0px 10px 0px 30px;
 	}
 	.auto-type {
 		margin-left: 22%
@@ -504,24 +511,14 @@ li {
 		border-bottom-style: solid;
 		padding-bottom: 5px;
 	}
+	.project-info {
+		padding: 1.25rem 0.75rem;
+	}
 
 }
 
 
 @media screen and (min-width: 768px) {
-	/*	.text-small {
-		font-size: 1.2em;
-	}
-	.text-medium {
-		font-size: 1.8em;
-	}
-	.text-large {
-		font-size: 2.5em;
-	}
-	.text-xl {
-		font-size: 4.5em;
-	}*/
-
 	html {
 		font-size: 1.75em;
 	}
@@ -534,14 +531,6 @@ li {
 		min-height: 600px;
 	}
 
-	.card-body {
-		padding: 1em;
-	}
-
-	.card-text {
-		text-align: left;
-		margin-bottom: 30px;
-	}
 	.auto-type {
 		margin-left: 28%
 	}
@@ -554,7 +543,12 @@ li {
 		text-align: right;
 		margin-bottom: 0rem;
 	}
-
+	.hide-item-md {
+		display: none;
+	}
+	.project-info {
+		border-radius: 0 0.25rem 0.25rem 0;
+	}
 }
 
 @media screen and (min-width: 960px) {
@@ -571,27 +565,18 @@ li {
 		font-size: 0.7em;
 	}
 
-	.card-body {
-		padding: 2em;
-	}
-
 	p {
 		font-size: .7em;
 		font-family: 'Open Sans', sans-serif;
 		margin-bottom: .7em;
 	}
 
-
-	li {
-		font-size: .56em;
-		font-family: 'Open Sans', sans-serif;
-		margin-bottom: .6em;
-		margin-right: 10px;
-	}
 	.auto-type {
 		margin-left: 32%
 	}
-
+	.project-info {
+		padding: 1.25rem 1.25rem;
+	}
 }
 
 @media screen and (min-width: 1140px) {
