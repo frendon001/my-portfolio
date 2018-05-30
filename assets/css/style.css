@@ -1,6 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
+	background-color: #1e1f1f;
 	/*color: #323536;*/
 }
 
@@ -38,6 +39,10 @@ p {
 ul {
 	padding-left: 15px;
 	list-style: none;
+}
+
+.row {
+	margin: 0;
 }
 
 .project-skill {
@@ -216,6 +221,7 @@ ul {
 	border: 3px solid #268ee6;
 	border-radius: .4em;
 	padding: 8px 15px 8px 15px;
+	margin: 2px 5px 2px 5px;
 	font-size: .65em;
 }
 
@@ -223,6 +229,7 @@ ul {
 	color: #fff;
 	background-color: #268ee6;
 	padding: 10px 20px 10px 20px;
+	margin: 0;
 }
 
 .site-btn {
@@ -230,6 +237,7 @@ ul {
 	border: 3px solid #40ab51;
 	border-radius: .4em;
 	padding: 8px 10px 8px 10px;
+	margin: 2px 5px 2px 5px;
 	font-size: .65em;
 }
 
@@ -237,6 +245,7 @@ ul {
 	color: #fff;
 	background-color: #40ab51;
 	padding: 10px 15px 10px 15px;
+	margin: 0;
 }
 
 .link:hover {
