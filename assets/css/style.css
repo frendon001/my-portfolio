@@ -169,8 +169,16 @@ ul {
 	max-width: 500px;
 }
 
-.exp-img {
+#exp-img-rgr {
 	width: 200px;
+}
+
+#exp-img-jons {
+	width: 200px;
+}
+
+#exp-img-lrw {
+	width: 175px;
 }
 
 .exp-img-section {
@@ -579,6 +587,14 @@ ul {
 	.project-info {
 		border-radius: 0 0.25rem 0.25rem 0;
 	}
+	#exp-img-jons {
+		max-width: 100%;
+		min-width: 170px;
+	}
+	#exp-img-rgr {
+		max-width: 100%;
+		min-width: 170px;
+	}
 }
 
 @media screen and (min-width: 960px) {
@@ -606,6 +622,13 @@ ul {
 	}
 	.project-info {
 		padding: 1.25rem 1.25rem;
+	}
+	#exp-img-jons {
+		width: 200px;
+	}
+	#exp-img-rgr {
+		max-width: 100%;
+		min-width: 170px;
 	}
 }
 
